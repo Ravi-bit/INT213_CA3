@@ -1,0 +1,81 @@
+    .container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-right: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .box {
+        position: relative;
+        border-radius: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 11px;
+        width: 25%;
+        height: 10%;
+        background-color: rgb(197, 197, 197, 0.3);
+        outline: none;
+        z-index: 0;
+    }
+    
+    .box:hover,
+    .box:focus {
+        top: -6px;
+        right: 7px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        box-shadow: 5px 6px 10px rgba(5, 5, 5, 0.5);
+    }
+    
+    .collapse-content .fa.fa-heart:hover {
+        color: #f44336 !important;
+    }
+    
+    .collapse-content .fa.fa-share-alt:hover {
+        color: #0d47a1 !important;
+    }
+    
+    .likedish {
+        top: 20px;
+        right: 10px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: white;
+        transition: .2s ease-in;
+    }
+    
+    .likedish:hover {
+        box-shadow: 1px 1px 5px 3px rgb(0, 0, 0, 0.6);
+    }
+    
+    .likedishBtn {
+        position: relative;
+        top: 4px;
+        left: 8px;
+    }
+    
+    .searchSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .cartBtn {
+        margin-top: 15px;
+        padding: 5px;
+    }
+    
+    .cartBtn:hover {
+        color: red;
+    }

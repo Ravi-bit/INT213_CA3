@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+#loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid red;
+    width: 45px;
+    height: 45px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.header {
+    min-width: 1050px;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 15px;
+    border: 1px solid;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #343434;
+    box-sizing: border-box;
+}
+
+.navLogo {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logoicon {
+    flex: 1;
+    margin-left: auto;
+}
+
+.logoText {
+    flex: 1;
+    padding-right: 90px;
+    cursor: pointer;
+}
+
+.large {
+    font-size: 40px;
+    color: rgb(255, 255, 0, 0.8);
+    font-weight: 900;
+    font-family: 'Henny Penny', cursive;
+}
+
+.small {
+    font-size: 28px;
+    color: rgb(255, 0, 0, 0.8);
+    font-weight: 900;
+    font-family: 'Henny Penny', cursive;
+}
+
+.logoRotate {
+    animation-name: rotating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    /*#343434-upgrad,
+    #131921-amazon*/
+}
+
+@keyframes rotating {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(179deg);
+    }
+}
+
+.nav-mar {
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    display: inline-block;
+    width: 114px;
+    padding: 5px 0;
+    border-radius: 21px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 350;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+.same {
+    color: #fff;
+    border-radius: 21px;
+}
+
+.home {
+    color: black;
+    background-color: #fff;
+}
+
+.same:hover {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+    color: white;
+    font-size: 16px;
+    font-weight: 0;
+}
+
+.iconsSection {
+    flex: 1;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+}
+
+.itemPos {
+    flex: 2;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(19, 25, 33);
+    overflow-x: hidden;
+    transition: 0.5s ease-out;
+    padding-top: 60px;
+    margin-right: 7px;
+}
+
+.sidenav a {
+    padding: 15px 8px 10px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #8f8d8d;
+    display: block;
+    transition: 0.3s;
+}
+
+.navSign {
+    padding: 15px 8px 10px 27px;
+    font-size: 26px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn:hover {
+    color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    padding: 0px;
+    font-size: 38px;
+    margin-left: 40px;
+}
+
+.openbtn {
+    font-size: 30px;
+    padding: 2px;
+    cursor: pointer;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.openbtn:hover {
+    background-color: #343434;
+    color: #fff;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.line {
+    width: 50%;
+    margin: 3px;
+    margin-bottom: 3px;
+    margin-left: 10%;
+    margin-right: 5%;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.imgsection {
+    width: 80%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.foot {
+    position: relative;
+    padding: 15px;
+    top: 100%;
+    min-width: 1050px;
+    height: auto;
+    margin-top: 150px;
+    background-color: #343434;
+    /* background: linear-gadient(to right, rgba(255, 255, 255, 0.3), rgba(255, 123, 0, 0.3), rgba(255, 255, 255, 0.3));*/
+}
+
+.foot-center {
+    text-align: center;
+    text-justify: inter-word;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+.foot-header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(255, 165, 0, 0.6);
+}
+
+.mar {
+    margin-top: 6px;
+}
+
+.iconContainer {
+    margin-top: 15px;
+}
+
+.crct {
+    display: inline-flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.crct>a:hover {
+    color: white;
+    cursor: pointer;
+    border-radius: 200px;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.signInbtn {
+    float: right;
+    width: 110px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 30px;
+    font-family: "Lato", sans-serif;
+}
+
+.form-elegant .font-small {
+    font-size: 0.8rem;
+}
+
+.form-elegant .z-depth-1a {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+    box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+}
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+}
+
+.form-elegant .modal-header {
+    border-bottom: none;
+}
+
+.modal-dialog .form-elegant .btn .fab {
+    color: #2196f3!important;
+}
+
+.form-elegant .modal-body,
+.form-elegant .modal-footer {
+    font-weight: 400;
+}
+
+.signInlogo {
+    float: right;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    padding: 22px;
+    margin-left: 25px;
+    margin-right: 84px;
+    font-family: "Lato", sans-serif;
+    display: none;
+    border-radius: 100px;
+    background-color: red;
+    color: white;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle1:active {
+    pointer-events: none;
+}
+
+.dropdown-menu a:hover {
+    margin-left: 4px;
+    margin-right: 4px;
+    border-radius: 2px;
+    background-color: rgb(33, 150, 243, 0.5);
+}
