@@ -240,6 +240,9 @@
                           <option value="veg">Vegetarian</option>
                           <option value="bevarages">bevarages</option>
                           <option value="dessert">desserts</option>
+                          <option value="pizza">pizza</option>
+                          <option value="pasta">pasta</option>
+                          <option value="burger">burger</option>
                         </select>
             </div>
 
@@ -250,7 +253,7 @@
         <div class="card booking-card box" ng-repeat="item in menu | filter:searchItem">
 
             <div class="view overlay">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/8-col/img (5).jpg" alt="Card image cap">
+                <img class="card-img-top" ng-src="../{{item.Isrc}}" alt="Card image cap">
             </div>
             <div class="card-body">
                 <h5 class="card-title font-weight-bold"><a>{{item.name}}</a></h5>

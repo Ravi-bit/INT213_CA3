@@ -29,12 +29,12 @@ window.onload = function() {
 
 
 }
-var menuList = [{
+var menuList12 = [{
         id: 1,
         name: "chicken biryani",
         type: "non",
         ratings: 4.8,
-        Isrc: "",
+        Isrc: "assests/chickenB.jpg",
         totalRatings: 508,
         cost: 200
 
@@ -44,7 +44,7 @@ var menuList = [{
         name: "Egg biryani",
         type: "non",
         ratings: 4.1,
-        Isrc: "",
+        Isrc: "assests/eggB.jpg",
         totalRatings: 390,
         cost: 150
     },
@@ -54,7 +54,7 @@ var menuList = [{
         type: "vegetarian",
         ratings: 3.5,
         totalRatings: 410,
-        Isrc: "",
+        Isrc: "assests/vegB.jpg",
         cost: 90
     },
     {
@@ -62,7 +62,7 @@ var menuList = [{
         name: "Veg Salad",
         type: "vegetarian",
         ratings: 2,
-        Isrc: "",
+        Isrc: "assests/vegS.jpg",
         totalRatings: 90,
         cost: 50
     },
@@ -71,7 +71,7 @@ var menuList = [{
         name: "Gulab jamun",
         type: "dessert",
         ratings: 3,
-        Isrc: "",
+        Isrc: "assests/gulab.jpg",
         totalRatings: 120,
         cost: 40
     },
@@ -80,7 +80,7 @@ var menuList = [{
         name: "Daal makhani",
         type: "vegetarian",
         ratings: 4,
-        Isrc: "",
+        Isrc: "assests/soup.jpg",
         totalRatings: 369,
         cost: 80
     },
@@ -89,7 +89,7 @@ var menuList = [{
         name: "wine",
         type: "bevarages",
         ratings: 3.2,
-        Isrc: "",
+        Isrc: "assests/icedT.jpg",
         totalRatings: 143,
         cost: 70
     },
@@ -98,7 +98,7 @@ var menuList = [{
         name: "lemonade",
         type: "bevarages",
         ratings: 2,
-        Isrc: "",
+        Isrc: "assests/lemon.jpg",
         totalRatings: 60,
         cost: 210
     },
@@ -107,7 +107,7 @@ var menuList = [{
         name: "Mutton biryani",
         type: "non",
         ratings: 5,
-        Isrc: "",
+        Isrc: "assests/lambB.jpg",
         totalRatings: 700,
         cost: 300
     },
@@ -116,7 +116,7 @@ var menuList = [{
         name: "Garlic Naan",
         type: "vegetarian",
         ratings: 4.8,
-        Isrc: "",
+        Isrc: "assests/fries.jpg",
         totalRatings: 642,
         cost: 100
     }, {
@@ -124,7 +124,7 @@ var menuList = [{
         name: "Butter chicken",
         type: "non",
         ratings: 4.8,
-        Isrc: "",
+        Isrc: "assests/butterC.jpg",
         totalRatings: 1213,
         cost: 180
     }, {
@@ -132,7 +132,7 @@ var menuList = [{
         name: "Mutton curry",
         type: "non",
         ratings: 5,
-        Isrc: "",
+        Isrc: "assests/chickentikka.jpg",
         totalRatings: 2000,
         cost: 250
     }, {
@@ -140,7 +140,7 @@ var menuList = [{
         name: "Chicken tikka masala",
         type: "non",
         ratings: 4.6,
-        Isrc: "",
+        Isrc: "assests/chickentikka.jpg",
         totalRatings: 990,
         cost: 280
     }, {
@@ -148,7 +148,7 @@ var menuList = [{
         name: "Veg soup",
         type: "vegetarian",
         ratings: 4,
-        Isrc: "https://www.shutterstock.com/image-photo/bowl-vegetable-soup-spoon-on-napkin-584970181",
+        Isrc: "assests/soup.jpg",
         totalRatings: 302,
         cost: 120
     }, {
@@ -156,7 +156,7 @@ var menuList = [{
         name: "Iced tea",
         type: "bevarages",
         ratings: 4.2,
-        Isrc: "",
+        Isrc: "assests/icedT.jpg",
         totalRatings: 454,
         cost: 99
     }, {
@@ -164,7 +164,7 @@ var menuList = [{
         name: "Hot chocolate",
         type: "bevarages",
         ratings: 4.9,
-        Isrc: "",
+        Isrc: "assests/hotchoc.jpg",
         totalRatings: 149,
         cost: 642
     }, {
@@ -172,7 +172,7 @@ var menuList = [{
         name: "Panner tikka masala",
         type: "vegetarian",
         ratings: 4.8,
-        Isrc: "https://www.shutterstock.com/image-photo/tokyo-japan-circa-july-2018-closeup-1699823506",
+        Isrc: "assests/pannerT.jpg",
         totalRatings: 789,
         cost: 125
     }, {
@@ -180,7 +180,7 @@ var menuList = [{
         name: "Milk Shake",
         type: "bevarages",
         ratings: 5,
-        Isrc: "",
+        Isrc: "assests/milkshake.jpg",
         totalRatings: 476,
         cost: 30
     }, {
@@ -188,7 +188,7 @@ var menuList = [{
         name: "Potato fries",
         type: "vegetarian",
         ratings: 4.6,
-        Isrc: "",
+        Isrc: "assests/fries.jpg",
         totalRatings: 999,
         cost: 249
     }, {
@@ -196,7 +196,7 @@ var menuList = [{
         name: "kheer",
         type: "dessert",
         ratings: 3.9,
-        Isrc: "",
+        Isrc: "assests/kheer.jpg",
         totalRatings: 189,
         cost: 30
     }, {
@@ -204,7 +204,7 @@ var menuList = [{
         name: "chicken kebab",
         type: "non",
         ratings: 4.7,
-        Isrc: "",
+        Isrc: "assests/kebab.jpg",
         totalRatings: 842,
         cost: 180
     }, {
@@ -212,7 +212,7 @@ var menuList = [{
         name: "Rasu gulla",
         type: "dessert",
         ratings: 3.6,
-        Isrc: "",
+        Isrc: "assests/rasgulla.jpg",
         totalRatings: 510,
         cost: 99
     }, {
@@ -220,7 +220,7 @@ var menuList = [{
         name: "Masala Dosa",
         type: "vegetarian",
         ratings: 4,
-        Isrc: "",
+        Isrc: "assests/dosa.jpg",
         totalRatings: 1042,
         cost: 110
     }, {
@@ -228,17 +228,90 @@ var menuList = [{
         name: "Rasmilai",
         type: "dessert",
         ratings: 4.6,
+        Isrc: "assests/rasmilai.jpg",
         totalRatings: 895,
         cost: 79
+    }, {
+        id: 25,
+        name: "pepperoni mix pizza",
+        type: "pizza",
+        ratings: 4.7,
+        Isrc: "assests/pizza.jpg",
+        totalRatings: 995,
+        cost: 120
+    }, {
+        id: 26,
+        name: "veggie burgers",
+        type: "burger veg",
+        ratings: 4.5,
+        Isrc: "assests/burger.jpg",
+        totalRatings: 1095,
+        cost: 130
+    }, {
+        id: 27,
+        name: "cheese burger",
+        type: "burger veg",
+        ratings: 4.4,
+        Isrc: "assests/burger.jpg",
+        totalRatings: 3217,
+        cost: 199
+    }, {
+        id: 28,
+        name: "white sauce pasta",
+        type: "pasta veg",
+        ratings: 3.6,
+        Isrc: "assests/pasta.jpg",
+        totalRatings: 765,
+        cost: 80
+    }, {
+        id: 29,
+        name: "cheese pizza",
+        type: "pizza veg",
+        ratings: 4.6,
+        Isrc: "assests/pizza.jpg",
+        totalRatings: 2456,
+        cost: 149
+    }, {
+        id: 30,
+        name: "italian cheese pasta",
+        type: "pasta veg",
+        ratings: 3.2,
+        Isrc: "assests/pasta.jpg",
+        totalRatings: 265,
+        cost: 100
+    }, {
+        id: 31,
+        name: "veg corn cheese pizza",
+        type: "pizza veg",
+        ratings: 3.1,
+        Isrc: "assests/pizza.jpg",
+        totalRatings: 2314,
+        cost: 99
+    }, {
+        id: 32,
+        name: "chicken burger",
+        type: "burger non",
+        ratings: 4.0,
+        Isrc: "assests/burger.jpg",
+        totalRatings: 3214,
+        cost: 299
+    }, {
+        id: 33,
+        name: "chicken pizza",
+        type: "pizza non",
+        ratings: 4.9,
+        Isrc: "assests/pizza.jpg",
+        totalRatings: 2975,
+        cost: 200
     }
 ]
 
-var places12 = [{
+var places1 = [{
         id: 1,
         name: "Indian Accents",
         city: "New Delhi",
         country: "India",
-        src: "assests/italy.jpg",
+        src: "assests/delhi.jpg",
         ratings: 5,
         totalRatings: 508,
         cost: 999
@@ -248,7 +321,7 @@ var places12 = [{
         name: "Bomras",
         city: "Los angeles",
         country: "United States",
-        src: "assests/lasvegas.jpg",
+        src: "assests/losA.jpg",
         ratings: 3,
         totalRatings: 390,
         cost: 220
@@ -258,7 +331,7 @@ var places12 = [{
         name: "Mirazur",
         city: "paris",
         country: "France",
-        src: "assests/losangeles.jpg",
+        src: "assests/paris.jpg",
         ratings: 3.5,
         totalRatings: 410,
         cost: 599
@@ -268,7 +341,7 @@ var places12 = [{
         name: "Gaggan",
         city: "Bangkok",
         country: "Thailand",
-        src: "assests/italy.jpg",
+        src: "assests/bangkok_1.jpg",
         ratings: 2,
         totalRatings: 90,
         cost: 499
@@ -278,7 +351,7 @@ var places12 = [{
         name: "Toast and tonic",
         city: "Bengaluru",
         country: "India",
-        src: "assests/lasvegas.jpg",
+        src: "assests/Bengaluru.jpg",
         ratings: 3,
         totalRatings: 120,
         cost: 699
@@ -288,7 +361,7 @@ var places12 = [{
         name: "Arpege",
         city: "Paris",
         country: "France",
-        src: "assests/losangeles.jpg",
+        src: "assests/paris.jpg",
         ratings: 4,
         totalRatings: 369,
         cost: 1200
@@ -308,7 +381,7 @@ var places12 = [{
         name: "Slink & Bardot",
         city: "Berlin",
         country: "Germany",
-        src: "assests/lasvegas.jpg",
+        src: "assests/berlin.jpg",
         ratings: 2,
         totalRatings: 60,
         cost: 1099
@@ -318,7 +391,7 @@ var places12 = [{
         name: "Savya Rasa",
         city: "Pune",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/pune.jpg",
         ratings: 5,
         totalRatings: 700,
         cost: 150
@@ -328,7 +401,7 @@ var places12 = [{
         name: "Mum's kitchen",
         city: "Las vegas",
         country: "United States",
-        src: "assests/italy.jpg",
+        src: "assests/lasV.jpg",
         ratings: 4.8,
         totalRatings: 642,
         cost: 799
@@ -337,7 +410,7 @@ var places12 = [{
         name: "Blur ginger",
         city: "Mumbai",
         country: "India",
-        src: "assests/lasvegas.jpg",
+        src: "assests/mumbai.jpg",
         ratings: 4.8,
         totalRatings: 1213,
         cost: 399
@@ -346,7 +419,7 @@ var places12 = [{
         name: "Bastian",
         city: "Hyderabad",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/hyd.jpg",
         ratings: 5,
         totalRatings: 2000,
         cost: 250
@@ -355,7 +428,7 @@ var places12 = [{
         name: "Comorin",
         city: "Mumbai",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/mumbai.jpg",
         ratings: 4.6,
         totalRatings: 990,
         cost: 280
@@ -364,7 +437,7 @@ var places12 = [{
         name: "Farzi cafe",
         city: "Vijayawada",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/vij.jpg",
         ratings: 4,
         totalRatings: 302,
         cost: 120
@@ -373,7 +446,7 @@ var places12 = [{
         name: "The salt house",
         city: "Hyderabad",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/hyd.jpg",
         ratings: 4.2,
         totalRatings: 454,
         cost: 99
@@ -382,7 +455,7 @@ var places12 = [{
         name: "Olive bar and kitchen",
         city: "Vijayawada",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/vij.jpg",
         ratings: 4.9,
         totalRatings: 149,
         cost: 642
@@ -391,7 +464,7 @@ var places12 = [{
         name: "Mustard",
         city: "Chandigarh",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/chandi.jpg",
         ratings: 4.8,
         totalRatings: 789,
         cost: 125
@@ -400,7 +473,7 @@ var places12 = [{
         name: "Gun powder",
         city: "Amritsar",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/amritsar.jpg",
         ratings: 5,
         totalRatings: 476,
         cost: 30
@@ -409,7 +482,7 @@ var places12 = [{
         name: "Karavalli",
         city: "Vizag",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/vizag.jpg",
         ratings: 4.6,
         totalRatings: 999,
         cost: 249
@@ -419,7 +492,7 @@ var places12 = [{
         city: "New york",
         country: "United states",
         ratings: 3.9,
-        src: "assests/losangeles.jpg",
+        src: "assests/newyork.jpg",
         totalRatings: 189,
         cost: 20
     }, {
@@ -427,7 +500,7 @@ var places12 = [{
         name: "Gajalee",
         city: "Goa",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/goa.jpg",
         ratings: 4.7,
         totalRatings: 842,
         cost: 180
@@ -436,7 +509,7 @@ var places12 = [{
         name: "Leela palace",
         city: "Vizag",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/vizag.jpg",
         ratings: 3,
         totalRatings: 510,
         cost: 500
@@ -445,7 +518,7 @@ var places12 = [{
         name: "ITC maurya",
         city: "Chennai",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/chennai.jpg",
         ratings: 4.2,
         totalRatings: 1042,
         cost: 2500
@@ -454,7 +527,7 @@ var places12 = [{
         name: "Taj Falaknuma",
         city: "Hyderabad",
         country: "India",
-        src: "assests/losangeles.jpg",
+        src: "assests/hyd.jpg",
         ratings: 4.6,
         totalRatings: 19995,
         cost: 1500
@@ -613,7 +686,7 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
     }
 
 }).controller("dishController", function($scope) {
-    $scope.menu = menuList;
+    $scope.menu = menuList12;
 
     $scope.booking = function(event) {
 
@@ -811,7 +884,7 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
     }
 
 }).controller("reserveController", function($scope) {
-    $scope.list = places12;
+    $scope.list = places1;
     var seats = 1;
 
     $scope.booking = function(event) {
