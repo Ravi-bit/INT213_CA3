@@ -887,7 +887,11 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
             }
             var def = document.getElementById("feed");
             if (a > 0 && Hasword) {
-                var divAdd = '<div class="Postcontainer" style="position: relative;">' +
+                j = j + 1;
+                EId = "post" + j;
+                TId = "post" + j + "1";
+                LId = "post" + j + "2";
+                var divAdd = '<div class="Postcontainer" style="position: relative;" id="' + EId + '">' +
                     '<div class="headerpart">' +
                     '<div class="signInlogo1"  style="border: 1px solid #ccc; cursor: pointer;">' +
                     '<span style="position: relative; bottom:14px; right:8px; font-size: 20px; color: white; ">' + fl + '</span>' +
@@ -896,11 +900,10 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
                     '<span>' +
                     '<span class="text-muted" style="font-style: italic;">' + postername + '<span style="margin-left: 10px;margin-right: 4px; font-style: italic;">' + 'rated:' + '</span>' + '<strong>' + starId + '</strong>' + '<i class="fas fa-star amber-text" style="margin-left: 3px; color:gold;font-size: 15px;">' + '</i>' + '</span>' +
                     '</span>' + '<span class = "text-muted" style="font-size: 13px;">' + 'Posted at: ' + date + '</span>' + '</div>' +
-                    '<button style = "position: absolute; right: 0; top: 0; margin: 20px;"type = "button"class = "btn btn-secondary" >' + 'edit' + '</button>' + '</div>' +
-                    '<div class = "contentpart" >' + feedText +
+                    '<button style = "position: absolute; right: 0; top: 0; margin: 20px; cursor:pointer;" type = "button"class = "btn btn-secondary"  id="' + TId + '" onclick="editing(this.id)">' + '<i class="fas fa-trash-alt">' + '</i> ' + '</button>' + '</div>' +
+                    '<div class = "contentpart"  style="padding:5px;">' + feedText +
                     '</div>' + '<div class = "modal-footer mx-2 pt-2" >' +
-                    '<i class="fa fa-thumbs-o-up" style="font-size:36px margin:4px" onclick="liking(event)">' + '</i>' + '<span id="likeCount">' + '</span>' +
-                    '<i class="fa fa-thumbs-o-down" style="font-size:36px margin:4px" onclick="disliking(event)">' + '</i>' + '<span id="dislikeCount">' + '</span>' +
+                    '<i class="fas fa-heart" style="font-size:23px;margin:4px;color:black;cursor:pointer;" id="' + LId + '" onclick="liking(this.id)">' + '</i>' +
                     '</div>' + '</div>';
 
                 document.getElementById("posts").innerHTML += divAdd;
