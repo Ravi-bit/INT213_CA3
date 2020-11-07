@@ -285,8 +285,22 @@
             }
         };
 
-        function likingpost(e) {
-            event.target.innerText = "liked";
+        function editing(e) {
+            console.log(e);
+            var del = e.slice(0, 5);
+            document.getElementById(del).style.display = "none";
+        }
+        var count = 0;
+        var discount = 0;
+
+        function liking(e) {
+            console.log(e);
+            if (document.getElementById(e).style.color == "black") {
+                document.getElementById(e).style.color = "red"
+            } else {
+                document.getElementById(e).style.color = "black"
+            }
+
         }
 
         function openNav() {

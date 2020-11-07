@@ -865,6 +865,8 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
             document.getElementsByClassName("icol")[i].style.color = "#ccc";
         }
     }
+    var j = 0;
+    var EId, TId, LId;
     $scope.posting = function() {
         starId = starId ? starId : 0;
         var postername = localStorage.getItem("username");
