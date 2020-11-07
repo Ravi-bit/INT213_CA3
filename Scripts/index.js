@@ -853,5 +853,15 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
 
 
 }).controller("connectController", function($scope) {
+    $scope.clicking = function(event) {
+        var starId = Number(event.target.id);
+        console.log(starId);
+        for (var i = 0; i < starId; i++) {
+            document.getElementsByClassName("icol")[i].style.color = "gold";
+        }
+        for (var i = starId; i < 5; i++) {
+            document.getElementsByClassName("icol")[i].style.color = "#ccc";
+        }
+    }
 
 });
