@@ -9,6 +9,7 @@ var upname, upemail, uppass, upc, upmobile;
 var su, se, sphn, sp, spc, eq = false;
 var likes = [];
 var carts = [];
+var starId;
 window.onload = function() {
     fr = localStorage.getItem("firstL");
     retText = localStorage.getItem("username");
@@ -853,14 +854,64 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
 
 
 }).controller("connectController", function($scope) {
+
     $scope.clicking = function(event) {
-        var starId = Number(event.target.id);
+        starId = Number(event.target.id);
         console.log(starId);
         for (var i = 0; i < starId; i++) {
             document.getElementsByClassName("icol")[i].style.color = "gold";
         }
         for (var i = starId; i < 5; i++) {
             document.getElementsByClassName("icol")[i].style.color = "#ccc";
+        }
+    }
+    $scope.posting = function() {
+        starId = starId ? starId : 0;
+        var postername = localStorage.getItem("username");
+        var logcheck = localStorage.getItem("Log");
+        var date = new Date().toGMTString();
+        var fl = localStorage.getItem("firstL");
+        var feedText = document.getElementById("feed").value;
+        if (logcheck) {
+            var Hasword = false;
+            var pos;
+            var a = feedText.length;
+            var i = 0;
+            while (i < a) {
+                var b = feedText.charCodeAt(i);
+                if (b != 32) {
+                    Hasword = true;
+                    pos = i
+                }
+                i++;
+            }
+            var feeding = feedText.slice(pos);
+            var def = document.getElementById("feed");
+            if (a > 0 && Hasword) {
+                var divAdd = '<div class="Postcontainer" style="position: relative;">' +
+                    '<div class="headerpart">' +
+                    '<div class="signInlogo1" style="border: 1px solid #ccc; cursor: pointer;">' +
+                    '<span style="position: relative; bottom:14px; right:8px; font-size: 20px; color: white; ">' + fl + '</span>' +
+                    '</div>' +
+                    '<div class="username">' +
+                    '<span>' +
+                    '<span class="text-muted" style="font-style: italic;">' + postername + '<span style="margin-left: 10px;margin-right: 4px; font-style: italic;">' + 'rated:' + '</span>' + '<strong>' + starId + '</strong>' + '<i class="fas fa-star amber-text" style="margin-left: 3px; color:gold;font-size: 15px;">' + '</i>' + '</span>' +
+                    '</span>' + '<span class = "text-muted" style="font-size: 13px;">' + date + '< /span>' + '</div>' +
+                    '<button style = "position: absolute; right: 0; top: 0; margin: 20px;"type = "button"class = "btn btn-secondary" >' + 'edit' + '</button>' + '</div>' +
+                    '<div class = "contentpart" >' + feedText +
+                    '</div>' + '<div class = "modal-footer mx-2 pt-2" >' +
+                    '<button class = "float-right btn btn-primary" >' + 'like' + '</button>' + '</div>' + '</div>';
+
+                document.getElementById("posts").innerHTML += divAdd;
+                def.value = def.defaultValue;
+            } else {
+                swal("Unable to comment!", "Please enter some text", "warning");
+                def.value = def.defaultValue;
+            }
+
+
+        } else {
+            swal("Unable to post", "Please log in or sign up first", "warning");
         }
     }
 
