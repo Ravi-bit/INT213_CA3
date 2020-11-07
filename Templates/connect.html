@@ -208,7 +208,7 @@
                         <label for="feed" class="text-muted">Write your feedback:</label>
                     </td>
                     <td style="padding: 10px;">
-                        <textarea id="feed" rows="3" cols="50" style="border: 1px solid #ccc; margin-top: 8px;"></textarea>
+                        <textarea id="feed" rows="3" cols="50" style="border: 1px solid #ccc; margin-top: 8px; padding: 5px;"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -285,7 +285,9 @@
             }
         };
 
-
+        function likingpost(e) {
+            event.target.innerText = "liked";
+        }
 
         function openNav() {
             document.getElementById("mySidenav").style.width = "240px";

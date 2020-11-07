@@ -38,7 +38,7 @@ body {
 }
 
 .header {
-    min-width: 1050px;
+    min-width: 1055px;
     position: relative;
     top: 0;
     left: 0;
@@ -257,7 +257,7 @@ body {
     position: relative;
     padding: 15px;
     top: 100%;
-    min-width: 1050px;
+    min-width: 1055px;
     height: auto;
     margin-top: 150px;
     background-color: #343434;

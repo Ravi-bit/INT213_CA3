@@ -831,7 +831,7 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
             $scope.orderedcountry = places[pos].country;
             $scope.time = new Date().toGMTString();
             $scope.Totalcost = Number(places[pos].cost);
-
+            $scope.seatssel = seats == 1 ? 0 : (seats - 1);
         }
 
     }
@@ -842,7 +842,7 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
         if (event.target.style.backgroundColor != "green") {
             seats = seats + 1;
             event.target.style.backgroundColor = "green";
-            $scope.seatssel = (seats - 1);
+            $scope.seatssel = seats == 2 ? 1 : (seats - 1);
         } else {
             seats = seats - 1;
             event.target.style.backgroundColor = "#ffcc7b99";
@@ -885,25 +885,29 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
                 }
                 i++;
             }
-            var feeding = feedText.slice(pos);
             var def = document.getElementById("feed");
             if (a > 0 && Hasword) {
                 var divAdd = '<div class="Postcontainer" style="position: relative;">' +
                     '<div class="headerpart">' +
-                    '<div class="signInlogo1" style="border: 1px solid #ccc; cursor: pointer;">' +
+                    '<div class="signInlogo1"  style="border: 1px solid #ccc; cursor: pointer;">' +
                     '<span style="position: relative; bottom:14px; right:8px; font-size: 20px; color: white; ">' + fl + '</span>' +
                     '</div>' +
                     '<div class="username">' +
                     '<span>' +
                     '<span class="text-muted" style="font-style: italic;">' + postername + '<span style="margin-left: 10px;margin-right: 4px; font-style: italic;">' + 'rated:' + '</span>' + '<strong>' + starId + '</strong>' + '<i class="fas fa-star amber-text" style="margin-left: 3px; color:gold;font-size: 15px;">' + '</i>' + '</span>' +
-                    '</span>' + '<span class = "text-muted" style="font-size: 13px;">' + date + '< /span>' + '</div>' +
+                    '</span>' + '<span class = "text-muted" style="font-size: 13px;">' + 'Posted at: ' + date + '</span>' + '</div>' +
                     '<button style = "position: absolute; right: 0; top: 0; margin: 20px;"type = "button"class = "btn btn-secondary" >' + 'edit' + '</button>' + '</div>' +
                     '<div class = "contentpart" >' + feedText +
                     '</div>' + '<div class = "modal-footer mx-2 pt-2" >' +
-                    '<button class = "float-right btn btn-primary" >' + 'like' + '</button>' + '</div>' + '</div>';
+                    '<i class="fa fa-thumbs-o-up" style="font-size:36px margin:4px" onclick="liking(event)">' + '</i>' + '<span id="likeCount">' + '</span>' +
+                    '<i class="fa fa-thumbs-o-down" style="font-size:36px margin:4px" onclick="disliking(event)">' + '</i>' + '<span id="dislikeCount">' + '</span>' +
+                    '</div>' + '</div>';
 
                 document.getElementById("posts").innerHTML += divAdd;
                 def.value = def.defaultValue;
+                for (var i = 0; i < 5; i++) {
+                    document.getElementsByClassName("icol")[i].style.color = "#ccc";
+                }
             } else {
                 swal("Unable to comment!", "Please enter some text", "warning");
                 def.value = def.defaultValue;
