@@ -852,4 +852,6 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
 
 
 
+}).controller("connectController", function($scope) {
+
 });
