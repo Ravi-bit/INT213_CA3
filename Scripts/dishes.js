@@ -382,3 +382,465 @@ var places = [{
     }
 
 ]
+
+
+
+
+var places = [{
+        id: 1,
+        name: "Indian Accent",
+        city: "New Delhi",
+        country: "India",
+        ratings: 5,
+        src: "",
+        totalRatings: 508,
+        cost: 999
+    },
+    {
+        id: 2,
+        name: "Bomras",
+        city: "Los angeles",
+        country: "United States",
+        ratings: 3,
+        src: "fast-food.png",
+        totalRatings: 390,
+        cost: 220
+    },
+    {
+        id: 3,
+        name: "Mirazur",
+        city: "paris",
+        country: "France",
+        ratings: 3.5,
+        src: "fast-food.png",
+        totalRatings: 410,
+        cost: 599
+    },
+    {
+        id: 4,
+        name: "Gaggan",
+        city: "Bangkok",
+        country: "Thailand",
+        ratings: 2,
+        src: "fast-food.png",
+        totalRatings: 90,
+        cost: 499
+    },
+    {
+        id: 5,
+        name: "Toast and tonic",
+        city: "Bengaluru",
+        country: "India",
+        ratings: 3,
+        src: "fast-food.png",
+        totalRatings: 120,
+        cost: 699
+    },
+    {
+        id: 6,
+        name: "Arpege",
+        city: "Paris",
+        country: "France",
+        ratings: 4,
+        src: "fast-food.png",
+        totalRatings: 369,
+        cost: 1200
+    },
+    {
+        id: 7,
+        name: "The Fatty Bao",
+        city: "Rome",
+        country: "Italy",
+        ratings: 3.2,
+        src: "fast-food.png",
+        totalRatings: 143,
+        cost: 1200
+    },
+    {
+        id: 8,
+        name: "Slink & Bardot",
+        city: "Berlin",
+        country: "Germany",
+        ratings: 2,
+        src: "fast-food.png",
+        totalRatings: 60,
+        cost: 1099
+    },
+    {
+        id: 9,
+        name: "Savya Rasa",
+        city: "Pune",
+        country: "India",
+        ratings: 5,
+        src: "fast-food.png",
+        totalRatings: 700,
+        cost: 150
+    },
+    {
+        id: 10,
+        name: "Mum's kitchen",
+        city: "Las vegas",
+        country: "United States",
+        ratings: 4.8,
+        src: "fast-food.png",
+        totalRatings: 642,
+        cost: 799
+    }, {
+        id: 11,
+        name: "Blur ginger",
+        city: "Mumbai",
+        country: "India",
+        ratings: 4.8,
+        src: "fast-food.png",
+        totalRatings: 1213,
+        cost: 399
+    }, {
+        id: 12,
+        name: "Bastian",
+        city: "Hyderabad",
+        country: "India",
+        ratings: 5,
+        src: "fast-food.png",
+        totalRatings: 2000,
+        cost: 250
+    }, {
+        id: 13,
+        name: "Comorin",
+        city: "Mumbai",
+        country: "India",
+        ratings: 4.6,
+        src: "fast-food.png",
+        totalRatings: 990,
+        cost: 280
+    }, {
+        id: 14,
+        name: "Farzi cafe",
+        city: "Vijayawada",
+        country: "India",
+        ratings: 4,
+        src: "fast-food.png",
+        totalRatings: 302,
+        cost: 120
+    }, {
+        id: 15,
+        name: "The salt house",
+        city: "Hyderabad",
+        country: "India",
+        ratings: 4.2,
+        src: "fast-food.png",
+        totalRatings: 454,
+        cost: 99
+    }, {
+        id: 16,
+        name: "Olive bar and kitchen",
+        city: "Vijayawada",
+        country: "India",
+        ratings: 4.9,
+        src: "fast-food.png",
+        totalRatings: 149,
+        cost: 642
+    }, {
+        id: 17,
+        name: "Mustard",
+        city: "Chandigarh",
+        country: "India",
+        ratings: 4.8,
+        src: "fast-food.png",
+        totalRatings: 789,
+        cost: 125
+    }, {
+        id: 18,
+        name: "Gun powder",
+        city: "Amritsar",
+        country: "India",
+        ratings: 5,
+        src: "fast-food.png",
+        totalRatings: 476,
+        cost: 30
+    }, {
+        id: 19,
+        name: "Karavalli",
+        city: "Vizag",
+        country: "India",
+        ratings: 4.6,
+        src: "fast-food.png",
+        totalRatings: 999,
+        cost: 249
+    }, {
+        id: 20,
+        name: "Tres",
+        city: "New york",
+        country: "United states",
+        ratings: 3.9,
+        src: "fast-food",
+        totalRatings: 189,
+        cost: 399
+    }, {
+        id: 21,
+        name: "Gajalee",
+        city: "Goa",
+        country: "India",
+        ratings: 4.7,
+        src: "fast-food",
+        totalRatings: 842,
+        cost: 180
+    }, {
+        id: 22,
+        name: "Leela palace",
+        city: "Vizag",
+        country: "India",
+        ratings: 3,
+        src: "../assests/fast-food.png",
+        totalRatings: 510,
+        cost: 500
+    }, {
+        id: 23,
+        name: "ITC maurya",
+        city: "Chennai",
+        country: "India",
+        ratings: 4.2,
+        src: "fast-food.png",
+        totalRatings: 1042,
+        cost: 2500
+    }, {
+        id: 24,
+        name: "Taj Falaknuma",
+        city: "Hyderabad",
+        country: "India",
+        ratings: 4.6,
+        src: "fast-food.png",
+        totalRatings: 19995,
+        cost: 1500
+    }
+
+]
+
+
+var places = [{
+        id: 1,
+        name: "Indian Accent",
+        city: "New Delhi",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 5,
+        totalRatings: 508,
+        cost: 999
+    },
+    {
+        id: 2,
+        name: "Bomras",
+        city: "Los angeles",
+        country: "United States",
+        src: "assests/fast-food",
+        ratings: 3,
+        totalRatings: 390,
+        cost: 220
+    },
+    {
+        id: 3,
+        name: "Mirazur",
+        city: "paris",
+        country: "France",
+        src: "assests/fast-food",
+        ratings: 3.5,
+        totalRatings: 410,
+        cost: 599
+    },
+    {
+        id: 4,
+        name: "Gaggan",
+        city: "Bangkok",
+        country: "Thailand",
+        src: "assests/fast-food",
+        ratings: 2,
+        totalRatings: 90,
+        cost: 499
+    },
+    {
+        id: 5,
+        name: "Toast and tonic",
+        city: "Bengaluru",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 3,
+        totalRatings: 120,
+        cost: 699
+    },
+    {
+        id: 6,
+        name: "Arpege",
+        city: "Paris",
+        country: "France",
+        src: "assests/fast-food",
+        ratings: 4,
+        totalRatings: 369,
+        cost: 1200
+    },
+    {
+        id: 7,
+        name: "The Fatty Bao",
+        city: "Rome",
+        country: "Italy",
+        src: "assests/fast-food",
+        ratings: 3.2,
+        totalRatings: 143,
+        cost: 1200
+    },
+    {
+        id: 8,
+        name: "Slink & Bardot",
+        city: "Berlin",
+        country: "Germany",
+        src: "assests/fast-food",
+        ratings: 2,
+        totalRatings: 60,
+        cost: 1099
+    },
+    {
+        id: 9,
+        name: "Savya Rasa",
+        city: "Pune",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 5,
+        totalRatings: 700,
+        cost: 150
+    },
+    {
+        id: 10,
+        name: "Mum's kitchen",
+        city: "Las vegas",
+        country: "United States",
+        src: "assests/fast-food",
+        ratings: 4.8,
+        totalRatings: 642,
+        cost: 799
+    }, {
+        id: 11,
+        name: "Blur ginger",
+        city: "Mumbai",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4.8,
+        totalRatings: 1213,
+        cost: 399
+    }, {
+        id: 12,
+        name: "Bastian",
+        city: "Hyderabad",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 5,
+        totalRatings: 2000,
+        cost: 250
+    }, {
+        id: 13,
+        name: "Comorin",
+        city: "Mumbai",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4.6,
+        totalRatings: 990,
+        cost: 280
+    }, {
+        id: 14,
+        name: "Farzi cafe",
+        city: "Vijayawada",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4,
+        totalRatings: 302,
+        cost: 120
+    }, {
+        id: 15,
+        name: "The salt house",
+        city: "Hyderabad",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4.2,
+        totalRatings: 454,
+        cost: 99
+    }, {
+        id: 16,
+        name: "Olive bar and kitchen",
+        city: "Vijayawada",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4.9,
+        totalRatings: 149,
+        cost: 642
+    }, {
+        id: 17,
+        name: "Mustard",
+        city: "Chandigarh",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4.8,
+        totalRatings: 789,
+        cost: 125
+    }, {
+        id: 18,
+        name: "Gun powder",
+        city: "Amritsar",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 5,
+        totalRatings: 476,
+        cost: 30
+    }, {
+        id: 19,
+        name: "Karavalli",
+        city: "Vizag",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4.6,
+        totalRatings: 999,
+        cost: 249
+    }, {
+        id: 20,
+        name: "Tres",
+        city: "New york",
+        country: "United states",
+        ratings: 3.9,
+        src: "assests/fast-food",
+        totalRatings: 189,
+        cost: 20
+    }, {
+        id: 21,
+        name: "Gajalee",
+        city: "Goa",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4.7,
+        totalRatings: 842,
+        cost: 180
+    }, {
+        id: 22,
+        name: "Leela palace",
+        city: "Vizag",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 3,
+        totalRatings: 510,
+        cost: 500
+    }, {
+        id: 23,
+        name: "ITC maurya",
+        city: "Chennai",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4.2,
+        totalRatings: 1042,
+        cost: 2500
+    }, {
+        id: 24,
+        name: "Taj Falaknuma",
+        city: "Hyderabad",
+        country: "India",
+        src: "assests/fast-food",
+        ratings: 4.6,
+        totalRatings: 19995,
+        cost: 1500
+    }
+
+]

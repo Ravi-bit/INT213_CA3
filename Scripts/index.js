@@ -33,14 +33,17 @@ var menuList = [{
         name: "chicken biryani",
         type: "non",
         ratings: 4.8,
+        Isrc: "",
         totalRatings: 508,
         cost: 200
+
     },
     {
         id: 2,
         name: "Egg biryani",
         type: "non",
         ratings: 4.1,
+        Isrc: "",
         totalRatings: 390,
         cost: 150
     },
@@ -50,6 +53,7 @@ var menuList = [{
         type: "vegetarian",
         ratings: 3.5,
         totalRatings: 410,
+        Isrc: "",
         cost: 90
     },
     {
@@ -57,6 +61,7 @@ var menuList = [{
         name: "Veg Salad",
         type: "vegetarian",
         ratings: 2,
+        Isrc: "",
         totalRatings: 90,
         cost: 50
     },
@@ -65,6 +70,7 @@ var menuList = [{
         name: "Gulab jamun",
         type: "dessert",
         ratings: 3,
+        Isrc: "",
         totalRatings: 120,
         cost: 40
     },
@@ -73,6 +79,7 @@ var menuList = [{
         name: "Daal makhani",
         type: "vegetarian",
         ratings: 4,
+        Isrc: "",
         totalRatings: 369,
         cost: 80
     },
@@ -81,6 +88,7 @@ var menuList = [{
         name: "wine",
         type: "bevarages",
         ratings: 3.2,
+        Isrc: "",
         totalRatings: 143,
         cost: 70
     },
@@ -89,6 +97,7 @@ var menuList = [{
         name: "lemonade",
         type: "bevarages",
         ratings: 2,
+        Isrc: "",
         totalRatings: 60,
         cost: 210
     },
@@ -97,6 +106,7 @@ var menuList = [{
         name: "Mutton biryani",
         type: "non",
         ratings: 5,
+        Isrc: "",
         totalRatings: 700,
         cost: 300
     },
@@ -105,6 +115,7 @@ var menuList = [{
         name: "Garlic Naan",
         type: "vegetarian",
         ratings: 4.8,
+        Isrc: "",
         totalRatings: 642,
         cost: 100
     }, {
@@ -112,6 +123,7 @@ var menuList = [{
         name: "Butter chicken",
         type: "non",
         ratings: 4.8,
+        Isrc: "",
         totalRatings: 1213,
         cost: 180
     }, {
@@ -119,6 +131,7 @@ var menuList = [{
         name: "Mutton curry",
         type: "non",
         ratings: 5,
+        Isrc: "",
         totalRatings: 2000,
         cost: 250
     }, {
@@ -126,6 +139,7 @@ var menuList = [{
         name: "Chicken tikka masala",
         type: "non",
         ratings: 4.6,
+        Isrc: "",
         totalRatings: 990,
         cost: 280
     }, {
@@ -133,6 +147,7 @@ var menuList = [{
         name: "Veg soup",
         type: "vegetarian",
         ratings: 4,
+        Isrc: "https://www.shutterstock.com/image-photo/bowl-vegetable-soup-spoon-on-napkin-584970181",
         totalRatings: 302,
         cost: 120
     }, {
@@ -140,6 +155,7 @@ var menuList = [{
         name: "Iced tea",
         type: "bevarages",
         ratings: 4.2,
+        Isrc: "",
         totalRatings: 454,
         cost: 99
     }, {
@@ -147,6 +163,7 @@ var menuList = [{
         name: "Hot chocolate",
         type: "bevarages",
         ratings: 4.9,
+        Isrc: "",
         totalRatings: 149,
         cost: 642
     }, {
@@ -154,6 +171,7 @@ var menuList = [{
         name: "Panner tikka masala",
         type: "vegetarian",
         ratings: 4.8,
+        Isrc: "https://www.shutterstock.com/image-photo/tokyo-japan-circa-july-2018-closeup-1699823506",
         totalRatings: 789,
         cost: 125
     }, {
@@ -161,6 +179,7 @@ var menuList = [{
         name: "Milk Shake",
         type: "bevarages",
         ratings: 5,
+        Isrc: "",
         totalRatings: 476,
         cost: 30
     }, {
@@ -168,6 +187,7 @@ var menuList = [{
         name: "Potato fries",
         type: "vegetarian",
         ratings: 4.6,
+        Isrc: "",
         totalRatings: 999,
         cost: 249
     }, {
@@ -175,6 +195,7 @@ var menuList = [{
         name: "kheer",
         type: "dessert",
         ratings: 3.9,
+        Isrc: "",
         totalRatings: 189,
         cost: 30
     }, {
@@ -182,6 +203,7 @@ var menuList = [{
         name: "chicken kebab",
         type: "non",
         ratings: 4.7,
+        Isrc: "",
         totalRatings: 842,
         cost: 180
     }, {
@@ -189,6 +211,7 @@ var menuList = [{
         name: "Rasu gulla",
         type: "dessert",
         ratings: 3.6,
+        Isrc: "",
         totalRatings: 510,
         cost: 99
     }, {
@@ -196,6 +219,7 @@ var menuList = [{
         name: "Masala Dosa",
         type: "vegetarian",
         ratings: 4,
+        Isrc: "",
         totalRatings: 1042,
         cost: 110
     }, {
@@ -207,12 +231,14 @@ var menuList = [{
         cost: 79
     }
 ]
-var places = [{
+
+var places12 = [{
         id: 1,
-        name: "Indian Accent",
+        name: "Indian Accents",
         city: "New Delhi",
         country: "India",
-        ratings: 4,
+        src: "assests/italy.jpg",
+        ratings: 5,
         totalRatings: 508,
         cost: 999
     },
@@ -221,6 +247,7 @@ var places = [{
         name: "Bomras",
         city: "Los angeles",
         country: "United States",
+        src: "assests/lasvegas.jpg",
         ratings: 3,
         totalRatings: 390,
         cost: 220
@@ -230,6 +257,7 @@ var places = [{
         name: "Mirazur",
         city: "paris",
         country: "France",
+        src: "assests/losangeles.jpg",
         ratings: 3.5,
         totalRatings: 410,
         cost: 599
@@ -239,6 +267,7 @@ var places = [{
         name: "Gaggan",
         city: "Bangkok",
         country: "Thailand",
+        src: "assests/italy.jpg",
         ratings: 2,
         totalRatings: 90,
         cost: 499
@@ -248,6 +277,7 @@ var places = [{
         name: "Toast and tonic",
         city: "Bengaluru",
         country: "India",
+        src: "assests/lasvegas.jpg",
         ratings: 3,
         totalRatings: 120,
         cost: 699
@@ -257,6 +287,7 @@ var places = [{
         name: "Arpege",
         city: "Paris",
         country: "France",
+        src: "assests/losangeles.jpg",
         ratings: 4,
         totalRatings: 369,
         cost: 1200
@@ -266,6 +297,7 @@ var places = [{
         name: "The Fatty Bao",
         city: "Rome",
         country: "Italy",
+        src: "assests/italy.jpg",
         ratings: 3.2,
         totalRatings: 143,
         cost: 1200
@@ -275,6 +307,7 @@ var places = [{
         name: "Slink & Bardot",
         city: "Berlin",
         country: "Germany",
+        src: "assests/lasvegas.jpg",
         ratings: 2,
         totalRatings: 60,
         cost: 1099
@@ -284,6 +317,7 @@ var places = [{
         name: "Savya Rasa",
         city: "Pune",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 5,
         totalRatings: 700,
         cost: 150
@@ -293,6 +327,7 @@ var places = [{
         name: "Mum's kitchen",
         city: "Las vegas",
         country: "United States",
+        src: "assests/italy.jpg",
         ratings: 4.8,
         totalRatings: 642,
         cost: 799
@@ -301,6 +336,7 @@ var places = [{
         name: "Blur ginger",
         city: "Mumbai",
         country: "India",
+        src: "assests/lasvegas.jpg",
         ratings: 4.8,
         totalRatings: 1213,
         cost: 399
@@ -309,6 +345,7 @@ var places = [{
         name: "Bastian",
         city: "Hyderabad",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 5,
         totalRatings: 2000,
         cost: 250
@@ -317,6 +354,7 @@ var places = [{
         name: "Comorin",
         city: "Mumbai",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 4.6,
         totalRatings: 990,
         cost: 280
@@ -325,6 +363,7 @@ var places = [{
         name: "Farzi cafe",
         city: "Vijayawada",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 4,
         totalRatings: 302,
         cost: 120
@@ -333,6 +372,7 @@ var places = [{
         name: "The salt house",
         city: "Hyderabad",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 4.2,
         totalRatings: 454,
         cost: 99
@@ -341,6 +381,7 @@ var places = [{
         name: "Olive bar and kitchen",
         city: "Vijayawada",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 4.9,
         totalRatings: 149,
         cost: 642
@@ -349,6 +390,7 @@ var places = [{
         name: "Mustard",
         city: "Chandigarh",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 4.8,
         totalRatings: 789,
         cost: 125
@@ -357,6 +399,7 @@ var places = [{
         name: "Gun powder",
         city: "Amritsar",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 5,
         totalRatings: 476,
         cost: 30
@@ -365,6 +408,7 @@ var places = [{
         name: "Karavalli",
         city: "Vizag",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 4.6,
         totalRatings: 999,
         cost: 249
@@ -374,13 +418,15 @@ var places = [{
         city: "New york",
         country: "United states",
         ratings: 3.9,
+        src: "assests/losangeles.jpg",
         totalRatings: 189,
-        cost: 399
+        cost: 20
     }, {
         id: 21,
         name: "Gajalee",
         city: "Goa",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 4.7,
         totalRatings: 842,
         cost: 180
@@ -389,6 +435,7 @@ var places = [{
         name: "Leela palace",
         city: "Vizag",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 3,
         totalRatings: 510,
         cost: 500
@@ -397,6 +444,7 @@ var places = [{
         name: "ITC maurya",
         city: "Chennai",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 4.2,
         totalRatings: 1042,
         cost: 2500
@@ -405,6 +453,7 @@ var places = [{
         name: "Taj Falaknuma",
         city: "Hyderabad",
         country: "India",
+        src: "assests/losangeles.jpg",
         ratings: 4.6,
         totalRatings: 19995,
         cost: 1500
@@ -761,7 +810,7 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
     }
 
 }).controller("reserveController", function($scope) {
-    $scope.list = places;
+    $scope.list = places12;
     var seats = 1;
 
     $scope.booking = function(event) {

@@ -352,7 +352,7 @@
         <div class="card booking-card box" ng-repeat="item in list | filter:searchRes">
 
             <div class="view overlay">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/8-col/img (5).jpg" alt="Card image cap">
+                <img class="card-img-top" ng-src="../{{item.src}}" alt="Card image cap" />
             </div>
             <div class="card-body">
                 <h5 class="card-title font-weight-bold"><a>{{item.name}}</a></h5>
