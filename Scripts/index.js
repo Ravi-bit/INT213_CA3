@@ -29,7 +29,7 @@ window.onload = function() {
 
 
 }
-var menuList12 = [{
+var menuList = [{
         id: 1,
         name: "chicken biryani",
         type: "non",
@@ -686,7 +686,7 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
     }
 
 }).controller("dishController", function($scope) {
-    $scope.menu = menuList12;
+    $scope.menu = menuList;
 
     $scope.booking = function(event) {
 
@@ -975,7 +975,7 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
                     '<span>' +
                     '<span class="text-muted" style="font-style: italic;">' + postername + '<span style="margin-left: 10px;margin-right: 4px; font-style: italic;">' + 'rated:' + '</span>' + '<strong>' + starId + '</strong>' + '<i class="fas fa-star amber-text" style="margin-left: 3px; color:gold;font-size: 15px;">' + '</i>' + '</span>' +
                     '</span>' + '<span class = "text-muted" style="font-size: 13px;">' + 'Posted at: ' + date + '</span>' + '</div>' +
-                    '<button style = "position: absolute; right: 0; top: 0; margin: 20px; cursor:pointer;" type = "button"class = "btn btn-secondary"  id="' + TId + '" onclick="editing(this.id)">' + '<i class="fas fa-trash-alt">' + '</i> ' + '</button>' + '</div>' +
+                    '<button style = "position: absolute; right: 0; top: 0; margin: 20px; cursor:pointer;" type = "button" class ="btn btn-secondary"  id="' + TId + '" onclick="editing(this.id)">' + '<i class="fas fa-trash-alt">' + '</i> ' + '</button>' + '</div>' +
                     '<div class = "contentpart"  style="padding:5px;">' + feedText +
                     '</div>' + '<div class = "modal-footer mx-2 pt-2" >' +
                     '<i class="fas fa-heart" style="font-size:23px;margin:4px;color:black;cursor:pointer;" id="' + LId + '" onclick="liking(this.id)">' + '</i>' +
