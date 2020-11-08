@@ -973,7 +973,8 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
                     '</div>' +
                     '<div class="username">' +
                     '<span>' +
-                    '<span class="text-muted" style="font-style: italic;">' + postername + '<span style="margin-left: 10px;margin-right: 4px; font-style: italic;">' + 'rated:' + '</span>' + '<strong>' + starId + '</strong>' + '<i class="fas fa-star amber-text" style="margin-left: 3px; color:gold;font-size: 15px;">' + '</i>' + '</span>' +
+                    '<span class="text-muted" style="font-style: italic;">' + postername + '<span style="margin-left: 10px;margin-right: 4px; font-style: italic;">' + 'rated:' + '</span>' + '<strong>' + starId + '</strong>' + '<i class="fas fa-star amber-text icel" style="margin-left: 3px; color:gold;font-size: 15px;">' + '</i>' +
+                    '</span>' +
                     '</span>' + '<span class = "text-muted" style="font-size: 13px;">' + 'Posted at: ' + date + '</span>' + '</div>' +
                     '<button style = "position: absolute; right: 0; top: 0; margin: 20px; cursor:pointer;" type = "button" class ="btn btn-secondary"  id="' + TId + '" onclick="editing(this.id)">' + '<i class="fas fa-trash-alt">' + '</i> ' + '</button>' + '</div>' +
                     '<div class = "contentpart"  style="padding:5px;">' + feedText +
@@ -986,6 +987,8 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
                 for (var i = 0; i < 5; i++) {
                     document.getElementsByClassName("icol")[i].style.color = "#ccc";
                 }
+
+
 
             } else {
                 swal("Unable to comment!", "Please enter some text", "warning");
