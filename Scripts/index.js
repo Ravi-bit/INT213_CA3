@@ -774,7 +774,7 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
                 // console.log(localStorage);
             }
         } else {
-            swal("Unable to like!", "Please! Log in or Sign Up first!", "warning");
+            swal("Unable to cart!", "Please! Log in or Sign Up first!", "warning");
         }
     }
 
@@ -986,6 +986,7 @@ var myApp = angular.module("myswiggy", []).controller("mainController", function
                 for (var i = 0; i < 5; i++) {
                     document.getElementsByClassName("icol")[i].style.color = "#ccc";
                 }
+
             } else {
                 swal("Unable to comment!", "Please enter some text", "warning");
                 def.value = def.defaultValue;
