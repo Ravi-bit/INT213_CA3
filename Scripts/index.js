@@ -207,7 +207,7 @@ var menuList = [{
         Isrc: "assests/kebab.jpg",
         totalRatings: 842,
         cost: 180
-    }, {
+    }, /*{
         id: 22,
         name: "Rasu gulla",
         type: "dessert",
@@ -215,7 +215,7 @@ var menuList = [{
         Isrc: "assests/rasgulla.jpg",
         totalRatings: 510,
         cost: 99
-    }, {
+    },*/ {
         id: 23,
         name: "Masala Dosa",
         type: "vegetarian",
